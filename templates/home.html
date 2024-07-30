@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block nav %}
+    <a href="{{ url_for('login') }}" class="nav-button">Login</a>
+{% endblock %}
+
+{% block content %}
+<form class="box" method="post" class="buttons">
+    <h2>Enter the chatroom</h2>
+    <div>
+        <input type="text" name="name" placeholder="Enter your name" value="{{name}}"/>
+    <!-- </div>
+    <div class="join"> Corrected 'cass' to 'class' -->
+        <input type="text" placeholder="Room Code" name="code" value="{{code}}" />
+        <button type="submit" name="join" class="join-btn">Join a Room</button>
+    </div>
+    <button type="submit" name="create" class="create-btn">Create a Room</button>
+    {% if error %}
+    <ul class = "error">
+        <li>{{error}}</li>
+    </ul>
+    {% endif %}
+</form>
+
+{% endblock %}

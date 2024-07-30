@@ -1,0 +1,232 @@
+html, body {
+    height: 99%;
+    overflow: hidden;
+}
+body {
+    background-image: linear-gradient(45deg, #05124b, #01020b,#220338);
+    background-size: 300%,300%;
+    animation: color 15s ease-in-out infinite;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.buttons{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap:1vw;
+    margin-top: 10vw;
+}
+
+.join{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.create-btn{
+    width:100%;
+}
+
+
+.message-box{
+    margin: 5vw;
+    border-style: solid;
+    background-color: rgba(2, 16, 47, 0.204);
+    box-shadow: 2px black;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    align-items: stretch;
+}
+
+
+#messages{
+    overflow-y: scroll;
+    flex: 1;
+    width: 80vw;
+}
+
+.inputs{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+h2{
+    text-align: center;
+    color: aliceblue;
+    margin-top: 10px;
+}
+
+label{
+    color: aliceblue;
+}
+
+#message{
+    flex: 1;
+}
+
+#send-btn{
+    background-color: rgb(151, 251, 136);
+    width: 10vw;
+    padding: 10px;
+    height: auto;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+#send-btn:hover {
+        color: rgb(12, 86, 12);
+        background-color: rgb(0, 255, 0);
+}
+
+.join-btn{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.create-btn{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid rgb(248, 8, 8);
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.create-btn:hover {
+    color: rgb(248, 8, 8);
+    background-color: rgb(80, 40, 40);
+}
+
+.join-btn:hover {
+    color: rgb(10, 242, 10);
+    background-color: rgb(36, 71, 36);
+}
+
+.error {
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.text {
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.muted {
+    font-size: 10px;
+    color:bisque;
+    display: block;
+    color: gray;
+    font-size: 0.8em;
+}
+
+.box{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #191919;
+    text-align: center;
+  }
+  .box h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .box input[type = "text"],.box input[type = "password"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+  }
+  .box input[type = "text"]:focus,.box input[type = "password"]:focus{
+    width: 280px;
+    border-color: #2ecc71;
+  }
+  .box input[type = "submit"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+  }
+  .box input[type = "submit"]:hover{
+    background: #2ecc71;
+  }
+
+  .nav-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .nav-button:hover {
+    background-color: #3e8e41;
+  }  
